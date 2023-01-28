@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+
+}
+
+.container {
+    text-align: center;
+    display: block;
+}
+
+.title {
+    position: relative;
+    margin-top: 40vh;
+    margin-bottom: 70vh;
+}
+
+.title h1 {
+    text-shadow: 2px 2px 12px rgba(206, 206, 206, 0.61);
+    animation: intro 2s ease-out;
+}
+
+.title p {
+    text-shadow: 2px 2px 12px rgba(206, 206, 206, 0.61);
+    animation: introrev 2s ease-out;
+}
+
+
+
+@keyframes intro {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+        filter: blur(1px);
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes introrev {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+        filter: blur(1px);
+    }
+
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.card {
+    transition: 1s;
+    text-align: left;
+    margin-bottom: 50vh;
+    position: relative;
+    background: rgb(25, 49, 80);
+    background: linear-gradient(53deg, rgba(25, 49, 80, 1) 0%, rgba(51, 55, 82, 1) 100%);
+    box-shadow: -5px -5px 15px -4px rgba(0, 0, 0, 0.1);
+    transition: all .6s;
+    border-radius: 12px;
+    animation: introrev 2s ease-out;
+    text-shadow: 1px 1px 8px rgba(206, 206, 206, 0.61);
+}
+
+.card:hover {
+    transition: 1s;
+    transform: translateY(10px);
+}
+
+.left-section {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.profile-details {
+    flex-basis: 400px;
+}
+
+.profile-name {
+    font-size: 1.45rem;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 1px 1px 8px rgba(255, 0, 0, 0.61);
+}
+
+.profile-maps {
+    color: #353535;
+    display: block;
+    font-size: 1rem;
+}
+
+.profile-maps i {
+    color: #353535;
+    font-size: .8rem;
+}
+
+.profile-summary {
+    font-size: .925rem;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-end;
+    margin: 0px 15px;
+    flex-basis: 240px;
+}
+
+.link {
+    background: #0d1d31;
+    border-radius: 60px;
+    font-size: 13px;
+    padding: 4px 10px;
+    transition: all .3s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.link a,
+a:visited,
+a:link {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.link a,
+a:visited,
+a:link i {
+    padding-right: 2px;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: rgb(25, 49, 80);
+    background: linear-gradient(53deg, rgba(25, 49, 80, 1) 0%, rgba(51, 55, 82, 1) 100%);
+    text-align: center;
+    padding: 3rem;
+}
+
+.footer h1 {
+    font-size: 1.25rem;
+}
+
+.footer p {
+    font-size: 0.85rem;
+}
